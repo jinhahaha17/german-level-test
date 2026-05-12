@@ -489,119 +489,119 @@ const questions = [
   {
     id: 2, level: "A1", domain: "grammar",
     question: "Das ist ___ Tisch.",
-    options: ["ein", "eine", "einer", "einen"],
-    correct: 0
+    options: ["eine", "ein", "einer", "einen"],
+    correct: 1
   },
   {
     id: 3, level: "A1", domain: "vocab",
     question: "Wie geht es ___?",
-    options: ["Ihnen", "Sie", "Ihr", "Ihre"],
-    correct: 0
+    options: ["Sie", "Ihr", "Ihnen", "Ihre"],
+    correct: 2
   },
   {
     id: 4, level: "A1", domain: "grammar",
     question: "Ich ___ heute sehr müde.",
-    options: ["bin", "bist", "ist", "sind"],
-    correct: 0
+    options: ["bist", "ist", "sind", "bin"],
+    correct: 3
   },
   {
     id: 5, level: "A1", domain: "vocab",
     question: "Entschuldigung, wo ist die ___?",
-    options: ["Toilette", "Toiletten", "Toalett", "Toilett"],
-    correct: 0
+    options: ["Toiletten", "Toalett", "Toilette", "Toilett"],
+    correct: 2
   },
   /* ── A2 ─────────────────────────────────────── */
   {
     id: 6, level: "A2", domain: "vocab",
     question: "Das Gegenteil von 'teuer' ist ___.",
-    options: ["billig", "schwer", "schnell", "laut"],
-    correct: 0
+    options: ["schwer", "billig", "schnell", "laut"],
+    correct: 1
   },
   {
     id: 7, level: "A2", domain: "grammar",
     question: "Er ___ gestern ins Kino gegangen.",
-    options: ["ist", "hat", "war", "hatte"],
-    correct: 0
+    options: ["hat", "war", "hatte", "ist"],
+    correct: 3
   },
   {
     id: 8, level: "A2", domain: "vocab",
     question: "Ich ___ jeden Morgen eine Tasse Kaffee.",
-    options: ["trinke", "esse", "nehme", "schlucke"],
-    correct: 0
+    options: ["esse", "trinke", "nehme", "schlucke"],
+    correct: 1
   },
   {
     id: 9, level: "A2", domain: "grammar",
     question: "Er muss ___ beeilen, sonst verpasst er den Zug.",
-    options: ["sich", "ihm", "ihn", "sein"],
-    correct: 0
+    options: ["ihm", "ihn", "sein", "sich"],
+    correct: 3
   },
   {
     id: 10, level: "A2", domain: "vocab",
     question: "Der Zug fährt um 10 Uhr ___.",
-    options: ["ab", "an", "auf", "aus"],
-    correct: 0
+    options: ["an", "auf", "ab", "aus"],
+    correct: 2
   },
   /* ── B1 ─────────────────────────────────────── */
   {
     id: 11, level: "B1", domain: "vocab",
     question: "Er hat die Prüfung erfolgreich ___.",
-    options: ["bestanden", "gemacht", "erreicht", "beendet"],
-    correct: 0
+    options: ["gemacht", "erreicht", "beendet", "bestanden"],
+    correct: 3
   },
   {
     id: 12, level: "B1", domain: "grammar",
     question: "Er arbeitet, ___ er sehr krank ist.",
-    options: ["obwohl", "weil", "damit", "dass"],
-    correct: 0
+    options: ["weil", "damit", "obwohl", "dass"],
+    correct: 2
   },
   {
     id: 13, level: "B1", domain: "vocab",
     question: "'Heimweh' bedeutet auf Englisch ___.",
-    options: ["homesickness", "nostalgia", "loneliness", "boredom"],
-    correct: 0
+    options: ["nostalgia", "loneliness", "boredom", "homesickness"],
+    correct: 3
   },
   {
     id: 14, level: "B1", domain: "grammar",
     question: "Das Buch, ___ ich gelesen habe, war sehr spannend.",
-    options: ["das", "der", "dem", "dessen"],
-    correct: 0
+    options: ["der", "dem", "das", "dessen"],
+    correct: 2
   },
   {
     id: 15, level: "B1", domain: "vocab",
     question: "Die Konferenz wurde kurzfristig ___.",
-    options: ["abgesagt", "angesagt", "aufgesagt", "besagt"],
-    correct: 0
+    options: ["angesagt", "abgesagt", "aufgesagt", "besagt"],
+    correct: 1
   },
   /* ── B2 ─────────────────────────────────────── */
   {
     id: 16, level: "B2", domain: "vocab",
     question: "Trotz wiederholter Versuche blieb eine Einigung ___.",
-    options: ["aus", "weg", "fern", "zurück"],
-    correct: 0
+    options: ["weg", "fern", "zurück", "aus"],
+    correct: 3
   },
   {
     id: 17, level: "B2", domain: "grammar",
     question: "___ er früher gekommen wäre, hätten wir mehr Zeit gehabt.",
-    options: ["Wäre", "Wenn", "Hätte", "Falls"],
-    correct: 0
+    options: ["Wenn", "Hätte", "Falls", "Wäre"],
+    correct: 3
   },
   {
     id: 18, level: "B2", domain: "vocab",
     question: "Das Projekt scheiterte an mangelnder ___.",
-    options: ["Finanzierung", "Finanzen", "Geldmittel", "Investition"],
-    correct: 0
+    options: ["Finanzen", "Finanzierung", "Geldmittel", "Investition"],
+    correct: 1
   },
   {
     id: 19, level: "B2", domain: "grammar",
     question: "Ich wünschte, ich ___ mehr Freizeit.",
-    options: ["hätte", "habe", "hatte", "gehabt"],
-    correct: 0
+    options: ["habe", "hatte", "gehabt", "hätte"],
+    correct: 3
   },
   {
     id: 20, level: "B2", domain: "vocab",
     question: "Sie ___ den Misserfolg auf mangelnde Planung zurück.",
-    options: ["führt", "setzt", "bringt", "macht"],
-    correct: 0
+    options: ["setzt", "bringt", "macht", "führt"],
+    correct: 3
   }
 ];
 
@@ -724,12 +724,15 @@ function showResults() {
   document.getElementById('result-title').textContent = info.title;
   document.getElementById('result-desc').textContent = info.desc;
 
-  document.getElementById('sc-total').textContent = totalCorrect + ' / 20';
-  document.getElementById('sc-vocab').textContent = domainScores.vocab + ' / 10';
-  document.getElementById('sc-grammar').textContent = domainScores.grammar + ' / 10';
+  const vocabTotal = questions.filter(q => q.domain === 'vocab').length;
+  const grammarTotal = questions.filter(q => q.domain === 'grammar').length;
 
-  const vPct = Math.round(domainScores.vocab / 10 * 100);
-  const gPct = Math.round(domainScores.grammar / 10 * 100);
+  document.getElementById('sc-total').textContent = totalCorrect + ' / 20';
+  document.getElementById('sc-vocab').textContent = domainScores.vocab + ' / ' + vocabTotal;
+  document.getElementById('sc-grammar').textContent = domainScores.grammar + ' / ' + grammarTotal;
+
+  const vPct = Math.round(domainScores.vocab / vocabTotal * 100);
+  const gPct = Math.round(domainScores.grammar / grammarTotal * 100);
   document.getElementById('bar-vocab-pct').textContent = vPct + '%';
   document.getElementById('bar-grammar-pct').textContent = gPct + '%';
 
